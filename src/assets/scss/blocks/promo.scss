@@ -1,9 +1,14 @@
 .promo {
 	position: relative;
-	padding-top: 224px;
+	padding-bottom: 50px;
 	min-height: 750px;
 	background: #3152FF;
 	background: linear-gradient(180deg, rgba(239, 251, 255, 0) 0%, rgba(0, 53, 130, 0.2) 100%), linear-gradient(249.96deg, rgba(29, 214, 255, 0) 36.64%, rgba(113, 0, 225, 0.6) 100%), linear-gradient(100.34deg, #001AFF 0%, #55CCFF 100%);
+	overflow: hidden;
+	@media (max-width: 992px) {
+		padding-top: 0;
+		min-height: 530px;
+	}
 	&::before {
 		content:'';
 		position: absolute;
@@ -12,29 +17,61 @@
 		width: 1050px;
 		height: 100%;
 		background: url('../img/Map.png') center center/cover no-repeat;
+		@media (max-width: 1200px) {
+			right: -130px;
+		}
+		@media (max-width: 992px) {
+			display: none;
+		}
 	}
 
 	&__container {
 		position: relative;
 		z-index: 100;
+		@media (max-width: 992px) {
+			text-align: center;
+		}
 	}
 
 	&__title {
+		margin-top: 224px;
 		font-family: 'ObjectSans', sans-serif;
 		font-size: 36px;
 		line-height: 36px;
+		@media (max-width: 992px) {
+			margin-top: 150px;
+		}
+		@media (max-width: 576px) {
+			font-size: 27px;
+		}
 	}
 
 	&__subtitle {
 		font-family: 'ObjectSans', sans-serif;
 		font-size: 80px;
 		line-height: 80px;
+		@media (max-width: 1200px) {
+			font-size: 50px;
+		}
+		@media (max-width: 576px) {
+			font-size: 40px;
+			line-height: 60px;
+		}
 	}
 
 	&__descr {
 		margin-top: 16px;
 		width: 580px;
 		line-height: 22px;
+		@media (max-width: 992px) {
+			margin: 16px auto 0 auto;
+		}
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+		@media (max-width: 576px) {
+			font-size: 12px;
+		}
 	}
 
 	&__btn {

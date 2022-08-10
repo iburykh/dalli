@@ -31,10 +31,10 @@ $maxWidthContainer: 1230; //(контейнер по макету + 30)
     width: $maxWidthContainer + px;
     margin: 0 auto;
     padding: 0 15px;
-    // @media (max-width: 1200px) {
-    //     width: 100%;
-    //     padding: 0 20px;
-    // }
+    @media (max-width: 1240px) {
+        width: 100%;
+        padding: 0 20px;
+    }
     // @media (max-width: 576px) {
     //     padding: 0 10px;
     // }

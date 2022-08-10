@@ -10,7 +10,9 @@
 	@@include('html/favicon.html')
 	@@include('html/fonts.html')
 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="assets/css/style.min.css">
+
 </head>
 
 <body>
@@ -34,6 +36,11 @@
 			<div class="header__phone">
 				<a href="tel:+74956468682">+7 (495) 646-86-82</a>
 			</div>
+			<button class="burger btn-reset" aria-label="открыть навигацию">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
 		</div>
 	</header>
 
@@ -50,57 +57,59 @@
 
 	<section class="about">
 		<div class="about__container container">
-			<div class="about__items">
-				<div class="about__item about-item about-item--1">
-					<div class="about-item__image">
-						<picture>
-							<source srcset="assets/img/about/money.webp" type="image/webp">
-							<img src="assets/img/about/money.png" loading="lazy" alt="">
-						</picture>
+			<div class="about__items swiper">
+				<div class="about__wrapper swiper-wrapper">
+					<div class="about__item about-item about-item--1 swiper-slide">
+						<div class="about-item__image">
+							<picture>
+								<source srcset="assets/img/about/money.webp" type="image/webp">
+								<img src="assets/img/about/money.png" loading="lazy" alt="">
+							</picture>
+						</div>
+						<p class="about-item__text">
+							Ежедневный возврат наложенных платежей
+						</p>
 					</div>
-					<p class="about-item__text">
-						Ежедневный возврат наложенных платежей
-					</p>
-				</div>
-				<div class="about__item about-item about-item--2">
-					<div class="about-item__image">
-						<picture>
-							<source srcset="assets/img/about/clock.webp" type="image/webp">
-							<img src="assets/img/about/clock.png" loading="lazy" alt="">
-						</picture>
+					<div class="about__item about-item about-item--2 swiper-slide">
+						<div class="about-item__image">
+							<picture>
+								<source srcset="assets/img/about/clock.webp" type="image/webp">
+								<img src="assets/img/about/clock.png" loading="lazy" alt="">
+							</picture>
+						</div>
+						<p class="about-item__text">
+							Доставка по городам ЦФО на следующий день
+						</p>
 					</div>
-					<p class="about-item__text">
-						Ежедневный возврат наложенных платежей
-					</p>
-				</div>
-				<div class="about__item about-item about-item--3">
-					<div class="about-item__image">
-						<picture>
-							<source srcset="assets/img/about/box.webp" type="image/webp">
-							<img src="assets/img/about/box.png" loading="lazy" alt="">
-						</picture>
+					<div class="about__item about-item about-item--3 swiper-slide">
+						<div class="about-item__image">
+							<picture>
+								<source srcset="assets/img/about/box.webp" type="image/webp">
+								<img src="assets/img/about/box.png" loading="lazy" alt="">
+							</picture>
+						</div>
+						<p class="about-item__text">
+							Доставка из оффлайн-магазинов Ship From Store
+						</p>
 					</div>
-					<p class="about-item__text">
-						Ежедневный возврат наложенных платежей
-					</p>
-				</div>
-				<div class="about__item about-item about-item--4">
-					<div class="about-item__image">
-						<picture>
-							<source srcset="assets/img/about/car.webp" type="image/webp">
-							<img src="assets/img/about/car.png" loading="lazy" alt="">
-						</picture>
+					<div class="about__item about-item about-item--4 swiper-slide">
+						<div class="about-item__image">
+							<picture>
+								<source srcset="assets/img/about/car.webp" type="image/webp">
+								<img src="assets/img/about/car.png" loading="lazy" alt="">
+							</picture>
+						</div>
+						<p class="about-item__text">
+							Доставка по России через партнёров
+						</p>
 					</div>
-					<p class="about-item__text">
-						Ежедневный возврат наложенных платежей
-					</p>
 				</div>
 			</div>
 			<div class="about__main">
 				<div class="about__text">
-					<h3 class="about__title">Dalli — это...</h3>
+					<h3 class="about__title title">Dalli — это...</h3>
 					<div class="about__descr">
-						Dalli — служба доставки для интернет-магазинови омниритейла. 
+						Dalli — служба доставки для интернет-магазинови омниритейла. <br>
 						Основные принципы компании — безукоризненное качество и безупречный сервис. 
 					</div>
 				</div>

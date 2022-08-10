@@ -6,10 +6,11 @@
 
 //============libs============
 @import 'libs_css/normalize.scss';
-// @import 'libs_css/swiper-bundle.scss';
+@import 'libs_css/swiper-bundle.scss';
 
 //============blocks==========
 @import 'blocks/header.scss';
 @import 'blocks/promo.scss';
 @import 'blocks/buttons.scss';
 @import 'blocks/about.scss';
+@import 'blocks/title.scss';
