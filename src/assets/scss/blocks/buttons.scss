@@ -1,0 +1,49 @@
+.btn {
+	position: relative;
+	padding: 10px 32px;
+	background:  #3152FF ;
+	background: linear-gradient(180deg, rgba(78, 207, 255, 0.2) 0%, rgba(78, 207, 255, 0) 100%), linear-gradient(84.31deg, #55B8FF 0%, #3152FF 100%);
+	border-radius: 12px;
+	&::after {
+		content:'';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+		border-radius: 12px;
+		background: #153BFF;
+		background: linear-gradient(84.31deg, #41AEFD 0%, #153BFF 100%);
+		opacity: 0;
+		transition: all 0.3s ease 0s;
+	}
+	span {
+		position: relative;
+		z-index: 10;
+	}
+	@media (hover: hover) and (pointer: fine) {
+		&:hover {
+			&::after {
+				opacity: 1;
+			}
+			
+		}
+	}
+	&.white {
+		background:  #fff;
+		box-shadow: 0px 0px 120px rgba(128, 225, 255, 0.4);
+		&::after {
+			background: linear-gradient(0deg, rgba(81, 178, 255, 0.12), rgba(81, 178, 255, 0.12)), #FFFFFF;
+		}
+		span {
+			position: relative;
+			z-index: 10;
+			color: #1B3EF6;
+			background: linear-gradient(270deg, #007AFF 0%, #1B3EF6 100%);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Dalli</title>
+	<meta name="description" content="описание">
+	@@include('html/favicon.html')
+	@@include('html/fonts.html')
+
+	<link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container container">
+			<div class="header__logo">
+				<picture>
+					<source srcset="assets/img/logo-white.webp" type="image/webp">
+					<img src="assets/img/logo-white.png" loading="lazy" alt="">
+				</picture>
+			</div>
+			<nav class="menu burger-menu" tabindex="-1">
+				<ul class="menu__list list-reset">
+					<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Показатели</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Тарифы</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Возможности</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="header__phone">
+				<a href="tel:+74956468682">+7 (495) 646-86-82</a>
+			</div>
+		</div>
+	</header>
+
+	<section class="promo">
+		<div class="promo__container container">
+			<h1 class="promo__title">Доставка интернет-заказов</h1>
+			<h2 class="promo__subtitle">за один день</h2>
+			<p class="promo__descr">
+				Доставляйте по Москве и Московской области, <br> а также в Санкт-Петербург, Тулу, Орёл, Воронеж, Калугу, Тверь<br> и Ярославль от 205 рублей
+			</p>
+			<button class="promo__btn btn btn-reset white"><span>Отправить заявку</span></button>
+		</div>
+	</section>
+
+	<section class="about">
+		<div class="about__container container">
+			<div class="about__items">
+				<div class="about__item about-item about-item--1">
+					<div class="about-item__image">
+						<picture>
+							<source srcset="assets/img/about/money.webp" type="image/webp">
+							<img src="assets/img/about/money.png" loading="lazy" alt="">
+						</picture>
+					</div>
+					<p class="about-item__text">
+						Ежедневный возврат наложенных платежей
+					</p>
+				</div>
+				<div class="about__item about-item about-item--2">
+					<div class="about-item__image">
+						<picture>
+							<source srcset="assets/img/about/clock.webp" type="image/webp">
+							<img src="assets/img/about/clock.png" loading="lazy" alt="">
+						</picture>
+					</div>
+					<p class="about-item__text">
+						Ежедневный возврат наложенных платежей
+					</p>
+				</div>
+				<div class="about__item about-item about-item--3">
+					<div class="about-item__image">
+						<picture>
+							<source srcset="assets/img/about/box.webp" type="image/webp">
+							<img src="assets/img/about/box.png" loading="lazy" alt="">
+						</picture>
+					</div>
+					<p class="about-item__text">
+						Ежедневный возврат наложенных платежей
+					</p>
+				</div>
+				<div class="about__item about-item about-item--4">
+					<div class="about-item__image">
+						<picture>
+							<source srcset="assets/img/about/car.webp" type="image/webp">
+							<img src="assets/img/about/car.png" loading="lazy" alt="">
+						</picture>
+					</div>
+					<p class="about-item__text">
+						Ежедневный возврат наложенных платежей
+					</p>
+				</div>
+			</div>
+			<div class="about__main">
+				<div class="about__text">
+					<h3 class="about__title">Dalli — это...</h3>
+					<div class="about__descr">
+						Dalli — служба доставки для интернет-магазинови омниритейла. 
+						Основные принципы компании — безукоризненное качество и безупречный сервис. 
+					</div>
+				</div>
+				<div class="about__percent percent">
+					<div class="percent__item">
+						<h4 class="percent__title">Качество КС</h4>
+						<div class="percent__quantity percent__quantity--1">98,5%</div>
+					</div>
+					<div class="percent__item">
+						<h4 class="percent__title">Доставляемость</h4>
+						<div class="percent__quantity percent__quantity--2">98%</div>
+					</div>
+					<div class="percent__item">
+						<h4 class="percent__title">ONТIME</h4>
+						<div class="percent__quantity percent__quantity--3">96,7%</div>
+					</div>
+					<div class="percent__item">
+						<h4 class="percent__title">Выкуп</h4>
+						<div class="percent__quantity percent__quantity--4">96%</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="assets/js/vendor.min.js"></script>
+	<script src="assets/js/main.min.js"></script>
+</body>
+
+</html>
