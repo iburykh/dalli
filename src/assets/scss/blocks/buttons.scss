@@ -4,6 +4,7 @@
 	background:  #3152FF ;
 	background: linear-gradient(180deg, rgba(78, 207, 255, 0.2) 0%, rgba(78, 207, 255, 0) 100%), linear-gradient(84.31deg, #55B8FF 0%, #3152FF 100%);
 	border-radius: 12px;
+	color: $white-font;
 	&::after {
 		content:'';
 		position: absolute;
@@ -20,7 +21,7 @@
 	}
 	span {
 		position: relative;
-		z-index: 10;
+		z-index: 100;
 	}
 	@media (hover: hover) and (pointer: fine) {
 		&:hover {
