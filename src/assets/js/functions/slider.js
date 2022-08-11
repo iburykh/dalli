@@ -21,4 +21,21 @@ window.addEventListener('DOMContentLoaded', function() {
 		initialSlide: 1,
 		slidesPerView: 'auto'
 	});
+
+	const miniSlider = new Swiper('.slider-mini', {
+		grabCursor: true,
+		spaceBetween: 32,
+		slidesPerGroup: 1,
+		centeredSlides: true,
+		initialSlide: 1,
+		slidesPerView: 'auto'
+	});
+
+	const advantagesSlider = new Swiper('.swiper-advantages', {
+		grabCursor: true,
+		spaceBetween: 32,
+		slidesPerGroup: 1,
+		initialSlide: 0,
+		slidesPerView: 'auto'
+	});
 });

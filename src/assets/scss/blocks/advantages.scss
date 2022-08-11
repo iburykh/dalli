@@ -1,0 +1,95 @@
+.advantages {
+	padding-bottom: 160px;
+	overflow: hidden;
+	&__container {
+	}
+
+	&__heading{
+		font-weight: 800;
+		font-size: 22px;
+	}
+
+	&__slider {
+		margin-top: 40px;
+	}
+
+	&__wrapper {
+		align-items:stretch;
+	}
+
+	&__item {
+		position: relative;
+		padding: 32px;
+		width: 270px;
+		min-height: 350px;
+		background: linear-gradient(130.12deg, #273DFF 0%, #6BCAFF 100%);
+		border-radius: 32px;
+		color: $white-font;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		&::before {
+			content:'';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100%;
+			height: 100%;
+		}
+	}
+	
+	&__item--1 {
+		&::before {
+			background: url('../img/advantages/phone.png') center center/cover no-repeat;
+		}
+	}
+
+	&__item--2 {
+		&::before {
+			background: url('../img/advantages/cards.png') center center/cover no-repeat;
+		}
+	}
+
+	&__item--3 {
+		&::before {
+			background: url('../img/advantages/moto.png') center center/cover no-repeat;
+		}
+	}
+
+	&__item--4 {
+		&::before {
+			background: url('../img/advantages/bags.png') center center/cover no-repeat;
+		}
+	}
+
+
+	&__descr {
+		flex: 1 1 auto;
+		margin-top: 8px;
+		line-height: 140%;
+	}
+
+	&__rate {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		font-weight: 700;
+	}
+
+	&__rate-item {
+		&:first-child {
+			margin-right: 24px;
+		}
+	}
+
+	&__percent {
+		display: block;
+		font-size: 22px;
+	}
+
+	&__text {
+		display: block;
+		margin-top: 8px;
+	}
+}
