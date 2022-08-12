@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 	const tableSlider = new Swiper('.slider-table', {
 		pagination: {
-			el: ".swiper-pagination",
+			el: ".tariff__bullet",
 			type: 'bullets',
 			clickable: true,
 		  },
@@ -37,5 +37,19 @@ window.addEventListener('DOMContentLoaded', function() {
 		slidesPerGroup: 1,
 		initialSlide: 0,
 		slidesPerView: 'auto'
+	});
+
+	const clientsSlider = new Swiper('.swiper-clients', {
+		slidesPerView: "auto",
+		grid: {
+			rows: 2,
+		},
+		spaceBetween: 32,
+		pagination: {
+			el: ".clients__bullets",
+			type: 'bullets',
+			clickable: true,
+		},
+
 	});
 });

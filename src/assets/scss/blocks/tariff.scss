@@ -1,5 +1,5 @@
 .tariff {
-	padding-bottom: 160px;
+	@include adaptiv-value("padding-bottom", 160, 100, 1);
 	overflow: hidden;
 	&__title {
 		padding: 0px 20px;

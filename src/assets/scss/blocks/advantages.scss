@@ -1,5 +1,5 @@
 .advantages {
-	padding-bottom: 160px;
+	@include adaptiv-value("padding-bottom", 160, 100, 1);
 	overflow: hidden;
 	&__container {
 	}
