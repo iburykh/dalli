@@ -1,15 +1,49 @@
 .blue-bg {
+	position: relative;
+	&__container {
+		@media (max-width: 1240px) {
+			overflow: hidden;
+		}
+	}
 
 	&__bg {
+		position: absolute;
+		top: -288px;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		@media (max-width: 1200px) {
+			top: -50px;
+		}
+		@media (max-width: 576px) {
+			top: -37px;
+		}
 	}
 
 	&__big {
+		width: 100%;
+		height: auto;
+		@media (min-width: 1500px) {
+			height: 120%;
+		}
+		@media (max-width: 992px) {
+			display: none;
+		}
 	}
 
 	&__small {
-	}
-
-	&__container {
+		display: none;
+		width: 100%;
+		height: 100%;
+		@media (max-width: 992px) {
+			display: block;
+		}
+		@media (max-width: 576px) {
+			height: auto;
+		}
+		@media (max-width: 360px) {
+			height: 70%;
+		}
 	}
 }
 

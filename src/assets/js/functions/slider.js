@@ -41,10 +41,15 @@ window.addEventListener('DOMContentLoaded', function() {
 
 	const clientsSlider = new Swiper('.swiper-clients', {
 		slidesPerView: "auto",
-		grid: {
-			rows: 2,
+		breakpoints: {
+			577: {
+				spaceBetween: 32,
+				grid: {
+					rows: 2,
+				},
+			}
 		},
-		spaceBetween: 32,
+		spaceBetween: 20,
 		pagination: {
 			el: ".clients__bullets",
 			type: 'bullets',

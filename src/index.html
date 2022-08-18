@@ -911,16 +911,16 @@
 	</section>
 
 	<section class="blue-bg">
-		<!-- <div class="blue-bg__bg">
+		<div class="blue-bg__bg">
 			<picture>
 				<source srcset="" type="image/webp">
-				<img class="blue-bg__big" src="assets/img/connect/line-connect.png" loading="lazy" alt="">
+				<img class="blue-bg__big" src="assets/img/line-clients.png" loading="lazy" alt="">
 			</picture>
 			<picture>
 				<source srcset="" type="image/webp">
-				<img class="blue-bg__small" src="assets/img/connect/line-small.png" loading="lazy" alt="">
+				<img class="blue-bg__small" src="assets/img/line-clients-small.png" loading="lazy" alt="">
 			</picture>
-		</div> -->
+		</div>
 		<div class="blue-bg__container container">
 			<div class="clients">
 				<h2 class="clients__title title">Наши клиенты</h2>
@@ -1002,7 +1002,36 @@
 					<div class="clients__bullets swiper-pagination"></div>
 				</div>
 			</div>
-			
+			<div class="request">
+				<h2 class="request__title title title--center">Начните доставлять уже сегодня</h2>
+				<div class="request__descr descr">
+					Оставьте заявку на подключение, и мы свяжемся с вами в ближайшее время
+				</div>
+				<div class="request__form">
+					<form action="#" class="form" enctype="multipart/form-data">
+						<input placeholder="Введите имя" type="text" autocomplete="off" class="form__input">
+						<input placeholder="Введите электронный адрес" type="text" autocomplete="off" class="form__input email">
+						<input placeholder="+7 (999) 999-99-99" type="text" autocomplete="off" class="form__input tel">
+						<span class="form__policy">
+							Отправляя форму, вы даёте согласие с Политикой обработки персональных данных
+						</span>
+						<button class="form__submit btn btn-reset" onclick="document.getElementById('check').value = 'secretcode';">Отправить заявку</button>
+					</form>
+					<div class="request-ok">
+						<div class="request-ok__icon">
+							<picture>
+								<source srcset="assets/img/ok.webp" type="image/webp">
+								<img src="assets/img/ok.png" loading="lazy" alt="">
+							</picture>
+						</div>
+						<p class="request-ok__title">Спасибо!</p>
+						<p class="request-ok__descr">
+							Ваша заявка успешно отправлена. <br>Мы свяжемся с вами в ближайшее время
+						</p>
+					</div>
+				</div>
+				
+			</div>
 		</div>
 
 	</section>

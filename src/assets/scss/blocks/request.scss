@@ -1,0 +1,124 @@
+.request {
+	padding-bottom: 83px;
+
+	&__title {
+		margin: 0px auto;
+		width: 480px;
+		@media (max-width: 576px) {
+			width: 90%;
+		}
+	}
+
+	&__descr {
+		margin: 16px auto 0px auto;
+		width: 480px;
+		@media (max-width: 576px) {
+			width: 90%;
+		}
+	}
+	&__form {
+		padding: 32px;
+		margin: 40px auto 0px auto;
+		width: 576px;
+		background: 
+		linear-gradient(139.81deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.64), rgba(255, 255, 255, 0.64)), rgba(0, 87, 255, 0.12);
+		border: 2px solid #FFFFFF;
+		box-shadow: -20px 20px 84px rgba(0, 40, 89, 0.08);
+		backdrop-filter: blur(40px);
+		border-radius: 32px;
+		@media (max-width: 768px) {
+			width: 100%;
+			padding: 20px;
+		}
+	}
+}
+.form {
+	width: 100%;
+	&__input {
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+		padding: 16px;
+		background-color: #fff;
+		border-radius: 12px;
+		border: none;
+		border: solid 1px #46B5FF;
+		&:placeholder-shown {
+			border: solid 1px transparent;
+		}
+		&:-webkit-autofill {
+			background-color: #fff;
+		}
+		&::placeholder {
+			color: rgba(30, 30, 30, 0.4);
+			@media (max-width: 380px) {
+				font-size: 12px;
+			}
+		}
+		transition: all 0.3s ease 0s;
+		&:focus {
+			border: solid 1px #46B5FF;
+			&::placeholder {
+				color: $white-font;
+			}
+		}
+		&.error {
+			border: solid 1px #ff5c46;
+		}
+	}
+
+	&__policy {
+		display: block;
+		margin: 0px auto;
+		color: #365FFF;
+		text-align: center;
+		line-height: 150%;
+		@media (max-width: 576px) {
+			font-size: 12px;
+		}
+	}
+
+	&__submit {
+		display: block;
+		margin: 40px auto 0px auto;
+		@media (max-width: 460px) {
+			width: 100%;
+		}
+	}
+}
+.request-ok {
+	display: none;
+	width: 100%;
+	padding: 37px 0px;
+	text-align: center;
+	&__icon {
+		margin: 0px auto;
+		width: 80px;
+		height: 80px;
+		background: 
+		linear-gradient(165.89deg, #001AFF 0%, #46D3FF 100%) padding-box,
+		linear-gradient(#46B5FF , #0068FF) border-box;
+		border: solid 2px transparent;
+		border-radius: 24px;
+		img {
+			margin-top: 16px;
+			margin-left: 14px;
+			width: auto;
+			height: auto;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+
+	&__title {
+		margin-top: 40px;
+		font-weight: 800;
+		font-size: 32px;
+	}
+
+	&__descr {
+		margin-top: 16px;
+		line-height: 21px;
+	}
+}
+
