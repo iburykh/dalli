@@ -16,7 +16,7 @@
 </head>
 
 <body>
-	<header class="header">
+	<header class="header header-light">
 		<div class="header__container container">
 			<div class="header__logo">
 				<picture>
@@ -26,11 +26,11 @@
 			</div>
 			<nav class="menu burger-menu" tabindex="-1">
 				<ul class="menu__list list-reset">
-					<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">Показатели</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">Тарифы</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">Возможности</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+					<li class="menu__item"><a href="#header" class="menu__link scroll">Главная</a></li>
+					<li class="menu__item"><a href="#about" class="menu__link scroll">Показатели</a></li>
+					<li class="menu__item"><a href="#tariff" class="menu__link scroll">Тарифы</a></li>
+					<li class="menu__item"><a href="#advantages" class="menu__link scroll">Возможности</a></li>
+					<li class="menu__item"><a href="#footer" class="menu__link scroll">Контакты</a></li>
 				</ul>
 			</nav>
 			<div class="header__phone">
@@ -44,7 +44,7 @@
 		</div>
 	</header>
 
-	<section class="promo">
+	<section class="promo dark">
 		<div class="promo__container container">
 			<h1 class="promo__title">Доставка интернет-заказов</h1>
 			<h2 class="promo__subtitle">за один день</h2>
@@ -55,7 +55,7 @@
 		</div>
 	</section>
 
-	<section class="about">
+	<section class="about light">
 		<div class="about__container container">
 			<div class="about__items swiper">
 				<div class="about__wrapper swiper-wrapper">
@@ -135,7 +135,7 @@
 		</div>
 	</section>
 
-	<section class="tariff">
+	<section class="tariff light">
 		<h2 class="tariff__title title title--center">Тарифы доставки</h2>
 		<div class="tariff__descr descr">
 			Цена на доставку зависит от режима, количества доставок в месяц и веса
@@ -731,7 +731,7 @@
 		<button class="tariff__btn btn btn-reset"><span>Отправить заявку</span></button>
 	</section>
 
-	<section class="advantages">
+	<section class="advantages light">
 		<div class="advantages__container container">
 			<h3 class="advantages__title title">Больше преимуществ</h3>
 			<div class="advantages__slider swiper-advantages">
@@ -781,7 +781,7 @@
 		</div>
 	</section>
 
-	<section class="connect">
+	<section class="connect light">
 		<div class="connect__back">
 			<picture>
 				<source srcset="" type="image/webp">
@@ -849,7 +849,7 @@
 		</div>
 	</section>
 	
-	<section class="usability">
+	<section class="usability light">
 		<div class="usability__container container">
 			<h2 class="usability__title title title--center">Удобство для получателей</h2>
 			<div class="usability__descr descr">
@@ -922,7 +922,7 @@
 			</picture>
 		</div>
 		<div class="blue-bg__container container">
-			<div class="clients">
+			<div class="clients light">
 				<h2 class="clients__title title">Наши клиенты</h2>
 				<div class="clients__slider swiper-clients">
 					<div class="clients__wrapper swiper-wrapper">
@@ -1002,7 +1002,7 @@
 					<div class="clients__bullets swiper-pagination"></div>
 				</div>
 			</div>
-			<div class="request">
+			<div class="request dark">
 				<h2 class="request__title title title--center">Начните доставлять уже сегодня</h2>
 				<div class="request__descr descr">
 					Оставьте заявку на подключение, и мы свяжемся с вами в ближайшее время
@@ -1034,6 +1034,25 @@
 			</div>
 		</div>
 
+	</section>
+
+	<section class="footer">
+		<div class="footer__container container">
+			<div class="footer__logo">
+				<div class="footer__image">
+					<img src="assets/img/logo-blue.png" alt="logo">
+				</div>
+				<span class="footer__text">
+					2013-2022 Dalli Service<br>
+					Все права защищены.
+				</span>
+			</div>
+			<div class="footer__info">
+				<a href="tel:+74956468682" class="footer__phone">+7 (495) 646-86-82</a>
+				<a href="mailto:info@dalli-service.com" class="footer__email">info@dalli-service.com</a>
+				<a href="www.dalli-service.com" target="_blank" class="footer__site">www.dalli-service.com</a>
+			</div>
+		</div>
 	</section>
 
 	<script src="assets/js/vendor.min.js"></script>
