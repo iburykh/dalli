@@ -25,9 +25,23 @@
 			font-weight: 700;
 		}
 	}
+	.blue {
+		display: none;
+	}
 }
 .header-light {
 	color: $dark-font;
+	.white {
+		display: none;
+	}
+	.blue {
+		display: inline;
+	}
+	.header__phone {
+		a {
+			background: url('../img/footer/tel.png') left center no-repeat;
+		}
+	}
 }
 .menu {
 	flex: 1 1 auto;
@@ -64,6 +78,11 @@
 				&::before {
 					transform: scaleX(1);
 				}
+			}
+		}
+		&.active {
+			&::before {
+				transform: scaleX(1);
 			}
 		}
 	}

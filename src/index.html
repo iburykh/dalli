@@ -16,17 +16,21 @@
 </head>
 
 <body>
-	<header class="header header-light">
+	<header class="header block-fix">
 		<div class="header__container container">
 			<div class="header__logo">
 				<picture>
 					<source srcset="assets/img/logo-white.webp" type="image/webp">
-					<img src="assets/img/logo-white.png" loading="lazy" alt="">
+					<img class="white" src="assets/img/logo-white.png" loading="lazy" alt="logo">
+				</picture>
+				<picture>
+					<source srcset="assets/img/logo-blue.webp" type="image/webp">
+					<img class="blue" src="assets/img/logo-blue.png" loading="lazy" alt="logo">
 				</picture>
 			</div>
 			<nav class="menu burger-menu" tabindex="-1">
 				<ul class="menu__list list-reset">
-					<li class="menu__item"><a href="#header" class="menu__link scroll">Главная</a></li>
+					<li class="menu__item"><a href="#promo" class="menu__link scroll active">Главная</a></li>
 					<li class="menu__item"><a href="#about" class="menu__link scroll">Показатели</a></li>
 					<li class="menu__item"><a href="#tariff" class="menu__link scroll">Тарифы</a></li>
 					<li class="menu__item"><a href="#advantages" class="menu__link scroll">Возможности</a></li>
@@ -51,7 +55,7 @@
 			<p class="promo__descr">
 				Доставляйте по Москве и Московской области, <br> а также в Санкт-Петербург, Тулу, Орёл, Воронеж, Калугу, Тверь<br> и Ярославль от 205 рублей
 			</p>
-			<button class="promo__btn btn btn-reset white"><span>Отправить заявку</span></button>
+			<button class="promo__btn btn btn-reset white" data-btn="modal"><span>Отправить заявку</span></button>
 		</div>
 	</section>
 
@@ -728,7 +732,7 @@
 				</div>
 			</div>
 		</div>
-		<button class="tariff__btn btn btn-reset"><span>Отправить заявку</span></button>
+		<button class="tariff__btn btn btn-reset" data-btn="modal"><span>Отправить заявку</span></button>
 	</section>
 
 	<section class="advantages light">
@@ -1015,7 +1019,7 @@
 						<span class="form__policy">
 							Отправляя форму, вы даёте согласие с Политикой обработки персональных данных
 						</span>
-						<button class="form__submit btn btn-reset" onclick="document.getElementById('check').value = 'secretcode';">Отправить заявку</button>
+						<button class="form__submit btn btn-reset"><span>Отправить заявку</span></button>
 					</form>
 					<div class="request-ok">
 						<div class="request-ok__icon">
@@ -1054,6 +1058,38 @@
 			</div>
 		</div>
 	</section>
+
+	<div class="modal-overlay" tabindex="-1">
+		<div class="modal request__form" role="dialog" aria-hidden="true" data-modal>
+			<!-- контент окна -->
+			<h2 class="modal__title">Начните доставлять уже сегодня</h2>
+			<div class="modal__descr">
+				Оставьте заявку на подключение, и мы свяжемся с вами в ближайшее время
+			</div>
+			
+			<form action="#" class="form" enctype="multipart/form-data">
+				<input placeholder="Введите имя" type="text" autocomplete="off" class="form__input">
+				<input placeholder="Введите электронный адрес" type="text" autocomplete="off" class="form__input email">
+				<input placeholder="+7 (999) 999-99-99" type="text" autocomplete="off" class="form__input tel">
+				<span class="form__policy">
+					Отправляя форму, вы даёте согласие с Политикой обработки персональных данных
+				</span>
+				<button class="form__submit btn btn-reset"><span>Отправить заявку</span></button>
+			</form>
+			<div class="request-ok">
+				<div class="request-ok__icon">
+					<picture>
+						<source srcset="assets/img/ok.webp" type="image/webp">
+						<img src="assets/img/ok.png" loading="lazy" alt="">
+					</picture>
+				</div>
+				<p class="request-ok__title">Спасибо!</p>
+				<p class="request-ok__descr">
+					Ваша заявка успешно отправлена. <br>Мы свяжемся с вами в ближайшее время
+				</p>
+			</div>
+		</div>
+	</div>
 
 	<script src="assets/js/vendor.min.js"></script>
 	<script src="assets/js/main.min.js"></script>

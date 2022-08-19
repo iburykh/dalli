@@ -21,7 +21,6 @@ burger.addEventListener('click', () => {
 menuItem.forEach(item => {
     item.addEventListener('click', (e) => {
         e.preventDefault();
-        console.log(e.target);
         
         if (burger.classList.contains('active')) {
             burger.classList.remove('active');

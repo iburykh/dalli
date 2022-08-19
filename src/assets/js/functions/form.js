@@ -12,7 +12,7 @@ if (forms.length > 0) {
 				formRemoveError(form);
 				form.style.display = 'none';
 				form.reset();
-				let ok = document.querySelector('.request-ok');
+				let ok = form.nextElementSibling;
 				ok.style.display = 'block';
 				ok.classList.add('fadeIn');
 				setTimeout(() => {
@@ -20,7 +20,6 @@ if (forms.length > 0) {
 					form.style.display = 'block';
 					form.classList.add('fadeIn');
 				}, 5000);
-
 			}
 		});
 	});
