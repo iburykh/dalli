@@ -237,7 +237,7 @@ const scriptsProd = () => {
 		.pipe(dest(path.build.js))
 	return src(path.src.jsMain)
 		.pipe(groupConcat({
-			'main.min.js': src_folder + "/js/functions/*.js"
+			'main.min.js': src_folder + "/assets/js/functions/*.js"
 		}))
 		.pipe(strip())
 		.pipe(babel({
@@ -259,7 +259,7 @@ const scriptsBackend = () => {
 		.pipe(dest(path.build.js))
 	return src(path.src.jsMain)
 		.pipe(groupConcat({
-			'main.min.js': src_folder + "/js/functions/*.js"
+			'main.min.js': src_folder + "/assets/js/functions/*.js"
 		}))
 		.pipe(strip())
 		.pipe(babel({

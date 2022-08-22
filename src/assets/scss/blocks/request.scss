@@ -17,6 +17,7 @@
 		}
 	}
 	&__form {
+		position: relative;
 		padding: 32px;
 		margin: 40px auto 0px auto;
 		width: 576px;
@@ -26,6 +27,7 @@
 		box-shadow: -20px 20px 84px rgba(0, 40, 89, 0.08);
 		backdrop-filter: blur(40px);
 		border-radius: 32px;
+		z-index: 10;
 		@media (max-width: 768px) {
 			width: 100%;
 			padding: 20px;

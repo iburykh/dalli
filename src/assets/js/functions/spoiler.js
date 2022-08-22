@@ -4,7 +4,6 @@ const accordions = document.querySelectorAll('.accordion');
 accordions.forEach(el => {
 	el.addEventListener('click', (e) => {
 		const self = e.currentTarget;
-		console.log(self);
 		
 		const control = self.querySelector('.accordion__control');
 		const content = self.querySelector('.accordion__content');

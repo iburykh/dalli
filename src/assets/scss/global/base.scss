@@ -120,9 +120,9 @@ input[name="last_check"] {
     outline: none;
 }
 
-// a:focus,
-// button:focus,
-// select:focus {
-//     outline: 2px dotted #0089cd;
-//     outline-offset: 3px;
-// }
+a:focus,
+button:focus,
+.swiper-pagination-bullet:focus {
+    outline: 2px dotted #0089cd;
+    outline-offset: 3px;
+}
