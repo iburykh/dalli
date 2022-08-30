@@ -138,6 +138,7 @@
 		font-weight: 800;
 		font-size: 18px;
 		text-align: center;
+		will-change: height;
 		@media (max-width: 576px) {
 			text-align: left;
 		}
@@ -148,18 +149,7 @@
 	&:first-child {
 		margin: 16px auto 0px auto;
 	}
-	&.open {
-		.accordion__control {
-			&::after {
-				opacity: 1;
-			}
-		}
-		.accordion__content {
-			margin-top: 10px;
-			padding-bottom: 18px;
-			opacity: 1;
-		}
-	}
+
 	&__control {
 		position: relative;
 		padding: 10px 0px 10px 190px;
@@ -167,6 +157,15 @@
 		width: 100%;
 		text-align: left;
 		line-height: 16px;
+		overflow: hidden;
+		&.active {
+			&::after {
+				opacity: 1;
+			}
+			&::before {
+				transform: translateY(-50%);
+			}
+		}
 		@media (max-width: 576px) {
 			padding: 10px 0px 10px 50px;
 		}
@@ -184,13 +183,12 @@
 		&::before {
 			content:'';
 			position: absolute;
-			top: 0;
 			top: 50%;
 			left: 160px;
 			transform: translateY(-50%) rotate(180deg);
 			width: 20px;
 			height: 20px;
-			background: url('../img/arrow.svg') center center/cover no-repeat;
+			background: url('../img/arrow.png') center center/cover no-repeat;
 			transition: transform 0.3s ease-in-out;
 			@media (max-width: 576px) {
 				left: 20px;
@@ -200,13 +198,13 @@
 
 	&__content {
 		padding-left: 190px;
-		overflow: hidden;
-		padding-bottom: 0;
-		max-height: 0;
-		box-sizing: content-box;
-		opacity: 0;
-		transition: all 0.3s ease-out;
-		will-change: max-height;
+		// overflow: hidden;
+		// padding-bottom: 0;
+		// max-height: 0;
+		// box-sizing: content-box;
+		// opacity: 0;
+		// transition: all 0.3s ease-out;
+		// will-change: max-height;
 		@media (max-width: 576px) {
 			padding-left: 50px;
 		}

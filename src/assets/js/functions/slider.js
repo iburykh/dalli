@@ -5,7 +5,8 @@ window.addEventListener('DOMContentLoaded', function() {
 		spaceBetween: 32,
 		slidesPerGroup: 1,
 		initialSlide: 0,
-		slidesPerView: 'auto'
+		slidesPerView: 'auto',
+		touchRatio: 2,
 	});
 
 	const tableSlider = new Swiper('.slider-table', {
@@ -19,7 +20,8 @@ window.addEventListener('DOMContentLoaded', function() {
 		slidesPerGroup: 1,
 		centeredSlides: true,
 		initialSlide: 1,
-		slidesPerView: 'auto'
+		slidesPerView: 'auto',
+		touchRatio: 2,
 	});
 
 	const miniSlider = new Swiper('.slider-mini', {
@@ -28,7 +30,8 @@ window.addEventListener('DOMContentLoaded', function() {
 		slidesPerGroup: 1,
 		centeredSlides: true,
 		initialSlide: 1,
-		slidesPerView: 'auto'
+		slidesPerView: 'auto',
+		touchRatio: 2,
 	});
 
 	const advantagesSlider = new Swiper('.swiper-advantages', {
@@ -36,7 +39,8 @@ window.addEventListener('DOMContentLoaded', function() {
 		spaceBetween: 32,
 		slidesPerGroup: 1,
 		initialSlide: 0,
-		slidesPerView: 'auto'
+		slidesPerView: 'auto',
+		touchRatio: 2,
 	});
 
 	const clientsSlider = new Swiper('.swiper-clients', {
@@ -55,6 +59,6 @@ window.addEventListener('DOMContentLoaded', function() {
 			type: 'bullets',
 			clickable: true,
 		},
-
+		touchRatio: 2,
 	});
 });

@@ -42,6 +42,11 @@
 			background: url('../img/footer/tel.png') left center no-repeat;
 		}
 	}
+	.burger {
+		span {
+			background-color: #46B5FF;
+		}
+	}
 }
 .menu {
 	flex: 1 1 auto;
@@ -81,8 +86,10 @@
 			}
 		}
 		&.active {
-			&::before {
-				transform: scaleX(1);
+			@media (min-width: 993px) {
+				&::before {
+					transform: scaleX(1);
+				}
 			}
 		}
 	}
@@ -140,7 +147,6 @@
 .burger {
 	display: none;
 	width: 26px;
-	height: 12px;
 	span {
 		display: block;
 		height: 2px;
